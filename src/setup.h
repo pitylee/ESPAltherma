@@ -23,8 +23,8 @@
 #define TX_PIN    26// Pin connected to the RX pin of X10A
 #else 
 //Default GPIO PINs for Serial2:
-#define RX_PIN    16// Pin connected to the TX pin of X10A 
-#define TX_PIN    17// Pin connected to the RX pin of X10A
+#define RX_PIN    26// Pin connected to the TX pin of X10A 
+#define TX_PIN    25// Pin connected to the RX pin of X10A
 #endif
 
 #define PIN_THERM 0// Pin connected to the thermostat relay (normally open)
@@ -89,6 +89,7 @@
 //#include "def/DAIKIN_MINI_INVERTER_CHILLER04-08KW.h"
 //#include "def/PROTOCOL_S_ROTEX.h"
 //#include "def/DEFAULT.h"
+#include "def/ALTHERMA(OLDER).h"
 
 #ifndef LABELDEF
 #warning "NO DEFINITION SELECTED: Please select your heat pump definition in /src/setup.h -- Using default."
@@ -97,5 +98,5 @@
 
 // Default to "Protocol I"
 #ifndef PROTOCOL
-#define PROTOCOL 'I'
+#define PROTOCOL 'S'
 #endif
